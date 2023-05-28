@@ -29,8 +29,8 @@ public class Main {
     /* task2 */
     public static void task2() {
         int[] arr = generateRandomArray();
-        int minAmount = 200_001;
-        int maxAmount = -1;
+        int minAmount = arr[0];
+        int maxAmount = arr[0];
         for (int current : arr){
             if (current > maxAmount){
                 maxAmount = current;
