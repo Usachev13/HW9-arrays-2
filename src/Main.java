@@ -5,6 +5,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     public static int[] generateRandomArray() {
@@ -52,5 +53,18 @@ public class Main {
         float averageValue = (float) total / 30;
         System.out.println("Средняя сумма трат за месяц составит: " + averageValue);
 
+    }
+
+    /* task4 */
+
+    public static void task4() {
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        int temp = reverseFullName.length - 1;
+        for (int i : reverseFullName){
+            if (temp >= 0) {
+                System.out.print(reverseFullName[temp]);
+                temp--;
+            }
+        }
     }
 }
