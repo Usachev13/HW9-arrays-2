@@ -4,6 +4,7 @@ public class Main {
         System.out.println("HW9 arrays2 starts!");
         task1();
         task2();
+        task3();
     }
 
     public static int[] generateRandomArray() {
@@ -38,6 +39,18 @@ public class Main {
         }
         System.out.println("Максимальная сумма трат за день составила " + maxAmount + " рублей");
         System.out.println("Минимальная сумма трат за день составила " + minAmount + " рублей");
+
+    }
+
+    /* task3 */
+    public static void task3() {
+        int[] arr = generateRandomArray();
+        int total = 0;
+        for (int current : arr){
+            total += current;
+        }
+        float averageValue = (float) total / 30;
+        System.out.println("Средняя сумма трат за месяц составит: " + averageValue);
 
     }
 }
